@@ -1,0 +1,103 @@
+/* INSISTOR iOS Theme Overrides */
+
+:root {
+  --ios-blue: #007AFF;
+  --ios-blue-hover: #0066d6;
+  --ios-bg: #f2f2f7;
+  --ios-card-bg: rgba(255, 255, 255, 0.85);
+  --ios-card-dark: rgba(28, 28, 30, 0.85);
+  --ios-border-radius: 14px;
+  --ios-btn-radius: 10px;
+  --ios-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Typography */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, input, select, textarea {
+  font-family: var(--ios-font);
+}
+
+/* Backgrounds & Glassmorphism */
+body {
+  background-color: var(--ios-bg) !important;
+  color: #1c1c1e !important;
+}
+
+/* Cards & Modals */
+.bg-white, [class*="bg-white"] {
+  background-color: var(--ios-card-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: var(--ios-border-radius) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04) !important;
+}
+
+/* Dark Mode Overrides (if app supports it natively) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000 !important;
+    color: #f2f2f7 !important;
+  }
+  .bg-white, [class*="bg-white"] {
+    background-color: var(--ios-card-dark) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4) !important;
+  }
+}
+
+/* Buttons */
+button, .btn, [role="button"] {
+  border-radius: var(--ios-btn-radius) !important;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+}
+
+button:active, .btn:active, [role="button"]:active {
+  transform: scale(0.96) !important;
+  opacity: 0.8;
+}
+
+/* Primary buttons */
+.bg-primary, .bg-blue-500, [class*="bg-blue"] {
+  background-color: var(--ios-blue) !important;
+  color: white !important;
+}
+
+.bg-primary:hover, .bg-blue-500:hover {
+  background-color: var(--ios-blue-hover) !important;
+}
+
+/* Inputs */
+input, textarea, select {
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 8px 12px !important;
+  transition: border-color 0.2s ease !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--ios-blue) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2) !important;
+}
+
+/* Scrollbars - iOS style (hidden until scroll, but CSS styling is limited) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
