@@ -80,7 +80,7 @@
       article img, article video, main a[href*="/p/"] img, main a[href*="/reel/"] img {
         border-radius: inherit !important;
       }
-      /* Convert INSSIST Gold Pro Badges to Apple Blue (Injected UI) */
+      /* Convert iassist Gold Pro Badges to Apple Blue (Injected UI) */
       :root {
         --tw-yellow-400: #007AFF !important;
         --tw-yellow-500: #007AFF !important;
@@ -302,7 +302,7 @@
     });
   }
 
-  // 5. Remove INSSIST "/..." DM template hint
+  // 5. Remove iassist "/..." DM template hint
   function removeSlashCommandHint() {
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
     let node;
