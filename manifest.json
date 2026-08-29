@@ -3,8 +3,8 @@
 
   "manifest_version": 3,
 
-  "name": "INSISTOR",
-  "description": "INSISTOR: The ultimate iOS-inspired Instagram Assistant.",
+  "name": "Instagram Plus",
+  "description": "Instagram Plus: The ultimate iOS-inspired Instagram Assistant.",
   "version": "1.0.0",
 
   "icons": {
@@ -24,7 +24,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.instagram.com/*"],
-      "js": ["/app/cs.js"],
+      "js": ["/app/cs.js", "/app/instagram-plus.js"],
       "run_at": "document_start",
       "all_frames": true
     }
@@ -45,7 +45,7 @@
 
   "action": {
     "default_icon": { "48": "img/icon-badge-48.png" },
-    "default_title": "INSISTOR | Instagram Assistant"
+    "default_title": "Instagram Plus"
   },
 
   "web_accessible_resources": [
