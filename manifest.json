@@ -3,8 +3,8 @@
 
   "manifest_version": 3,
 
-  "name": "Instagram Plus",
-  "description": "Instagram Plus: The ultimate iOS-inspired Instagram Assistant.",
+  "name": "Iassist for Instagram",
+  "description": "Iassist: The ultimate macOS-inspired Instagram Assistant.",
   "version": "1.0.0",
 
   "icons": {
@@ -40,12 +40,12 @@
   ],
   "optional_permissions": ["downloads", "downloads.ui"],
 
-  "host_permissions": ["*://*.instagram.com/*", "*://*.inssist.com/*"],
+  "host_permissions": ["*://*.instagram.com/*"],
   "optional_host_permissions": ["*://*.fbcdn.net/*", "*://*.cdninstagram.com/*"],
 
   "action": {
     "default_icon": { "48": "img/icon-badge-48.png" },
-    "default_title": "Instagram Plus"
+    "default_title": "Iassist for Instagram"
   },
 
   "web_accessible_resources": [

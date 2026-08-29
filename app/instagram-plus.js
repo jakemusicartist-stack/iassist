@@ -1,12 +1,12 @@
 /**
- * Instagram Plus - Power User Features
+ * Iassist - Power User Features
  * Injected as a content script to run alongside the main extension.
  */
 
 (function() {
   'use strict';
 
-  console.log('[Instagram Plus] Initializing Power-User Features...');
+  console.log('[Iassist] Initializing Power-User Features...');
 
   // Configuration for Custom Fonts mapping
   const fonts = {
@@ -176,12 +176,12 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(blobUrl);
           } catch (err) {
-            console.error('[Instagram Plus] Download failed, falling back to new tab', err);
+            console.error('[Iassist] Download failed, falling back to new tab', err);
             window.open(url, '_blank');
           }
         });
       } catch (err) {
-        console.error('[Instagram Plus] Error processing profile picture', err);
+        console.error('[Iassist] Error processing profile picture', err);
       }
     });
   }
@@ -228,7 +228,7 @@
           textNode.parentNode.replaceChild(fragment, textNode);
         });
       } catch (err) {
-        console.error('[Instagram Plus] Error processing text link', err);
+        console.error('[Iassist] Error processing text link', err);
       }
     });
   }
@@ -246,7 +246,7 @@
           overlay.style.pointerEvents = 'none';
         }
       } catch (err) {
-        console.error('[Instagram Plus] Error processing video controls', err);
+        console.error('[Iassist] Error processing video controls', err);
       }
     });
   }
@@ -297,7 +297,7 @@
 
         bioTextarea.parentElement.insertBefore(toolbar, bioTextarea);
       } catch (err) {
-        console.error('[Instagram Plus] Error injecting font widget', err);
+        console.error('[Iassist] Error injecting font widget', err);
       }
     });
   }
@@ -321,7 +321,7 @@
           }
         }
       } catch (err) {
-        console.error('[Instagram Plus] Error removing slash command hint', err);
+        console.error('[Iassist] Error removing slash command hint', err);
       }
     }
   }

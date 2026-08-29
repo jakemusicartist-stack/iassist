@@ -1,8 +1,10 @@
-# Instagram Plus
+# Iassist
 
-Instagram Plus is a customized, iOS-inspired Instagram Assistant Chrome Extension. This project enhances the native Instagram web experience by providing a beautiful mobile-like interface, complete with a clean blue aesthetic, integrated tools, and advanced customization options.
+Iassist is a customized, iOS-inspired Instagram Assistant Chrome Extension. This project enhances the native Instagram web experience by providing a beautiful mobile-like interface, complete with a clean blue aesthetic, integrated tools, and advanced customization options.
 
 ## Features
+
+- **100% Free:** All premium and PRO features are completely unlocked out of the box. No billing, no subscriptions, just powerful tools.
 
 - **iOS-Inspired Aesthetic:** A meticulously crafted blue UI theme (`#007AFF`) that brings a clean, premium mobile feel to the desktop.
 - **Power-User Tools:** High-Res Profile Picture Viewer, Mass Downloader, Clickable Links, and Copy Captions.
@@ -21,7 +23,7 @@ To install this extension locally in Chrome:
 2. Enable **Developer mode** in the top right corner.
 3. Click on **Load unpacked** in the top left corner.
 4. Select the `insisted` directory containing this repository.
-5. Pin the extension to your toolbar and click it to open Instagram Plus!
+5. Pin the extension to your toolbar and click it to open Iassist!
 
 ## Directory Structure
 
