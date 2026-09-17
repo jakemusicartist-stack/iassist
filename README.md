@@ -1,7 +1,7 @@
 ﻿<div align="center">
   <img src="img/icon-128.png" alt="Iassist Logo" width="128" />
   <h1>Iassist</h1>
-  <p><strong>A customized, iOS-inspired Instagram Assistant Chrome Extension</strong></p>
+  <p><strong>A Powerful chrome extension for Instagram</strong></p>
 
   [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](#)
   [![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
@@ -22,14 +22,11 @@ Iassist enhances the native Instagram web experience by providing a beautiful mo
 - 🎨 **iOS-Inspired Aesthetic**
   A meticulously crafted blue UI theme (#007AFF) that brings a clean, premium Apple-like feel to the desktop.
 
-- ⚡ **Power-User Tools**
-  Mass Downloader, Clickable Links, Copy Captions, and a High-Res Profile Picture Viewer built right in.
+- ⚡ **Profile Tools**
+  A High-Res Profile Picture Viewer built right in.
 
 - 🛡️ **Privacy Controls**
   Includes an Enhanced Ghost Mode for viewing stories and DMs anonymously, plus an integrated Ad Blocker.
-
-- 🧘 **Zen Mode**
-  Floating toggle to hide "Suggested Posts", the Reels tray, and other algorithm-driven clutter.
 
 - 🎥 **Video Player Controls & PIP**
   Native video controls and Picture-in-Picture mode for Reels and videos.
@@ -37,10 +34,7 @@ Iassist enhances the native Instagram web experience by providing a beautiful mo
 - 🔤 **Custom Bio Fonts**
   Easily convert bio text to stylized unicode fonts with a built-in generator.
 
-- 📥 **Background Downloads**
-  Download posts, reels, and stories in high definition directly from the extension UI.
-
-- 💎 **Custom Verified Badge**
+- 💎 **Verified Badge**
   Dynamically adds a custom verification badge exclusively to your profile.
 
 ---
