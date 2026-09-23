@@ -1,72 +1,56 @@
-﻿<div align="center">
-  <img src="img/icon-128.png" alt="Iassist Logo" width="128" />
+<div align="center">
+  <img src="img/icon-128.png" alt="Iassist logo" width="128" />
   <h1>Iassist</h1>
-  <p><strong>A Powerful chrome extension for Instagram</strong></p>
-
-  [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](#)
-  [![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
-  [![Free](https://img.shields.io/badge/pricing-100%25%20Free-success.svg)](#)
+  <p><strong>A focused visual refinement layer for Instagram</strong></p>
 </div>
 
-<br>
+Iassist improves the Instagram web experience with native-feeling typography, carefully
+targeted search surfaces, and a cleaner interface without unnecessary promotional clutter.
 
-Iassist enhances the native Instagram web experience by providing a beautiful mobile-like interface, complete with a clean blue aesthetic, integrated tools, and advanced customization options. It transforms the Instagram desktop view into a premium, power-user environment.
+## Features
 
----
+<table>
+  <tr>
+    <td width="64"><img src="img/ui-igswiss/hex-quality.svg" alt="" width="48" /></td>
+    <td>
+      <strong>System Typography</strong><br />
+      <code>SF Pro Display</code>, <code>SF Pro Text</code>, and <code>Helvetica Neue</code>
+      are applied globally across all elements on <code>instagram.com</code>.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="img/ui-igswiss/hex-dm.svg" alt="" width="48" /></td>
+    <td>
+      <strong>Direct Inbox Search Bar</strong> (<code>/direct/inbox/</code>)<br />
+      Restored to 100% native Instagram styling with zero double-overlay pills or custom
+      shadow interference.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="img/ui-igswiss/hex-insights.svg" alt="" width="48" /></td>
+    <td>
+      <strong>Explore Page Search Bar</strong> (<code>/explore/</code>)<br />
+      Renders with an Apple Glass translucent pill background and zero drop shadows or dark
+      halos over the Reels grid.
+    </td>
+  </tr>
+  <tr>
+    <td><img src="img/ui-igswiss/hex-ghost.svg" alt="" width="48" /></td>
+    <td>
+      <strong>Power Features &amp; Bloat Purge</strong><br />
+      Ghost Mode, Ad Blocker, HD Profile Picture downloader, and promotional bloat purging
+      remain fully functional.
+    </td>
+  </tr>
+</table>
 
-## ✨ Features
+## Installation
 
-- 🔓 **100% Free**
-  All premium and PRO features are completely unlocked out of the box. No billing, no subscriptions, just powerful tools.
+1. Open Chrome and navigate to <code>chrome://extensions</code>.
+2. Enable **Developer mode**.
+3. Select **Load unpacked**.
+4. Choose the folder containing this repository.
 
-- 🎨 **iOS-Inspired Aesthetic**
-  A meticulously crafted blue UI theme (#007AFF) that brings a clean, premium Apple-like feel to the desktop.
+## License
 
-- ⚡ **Profile Tools**
-  A High-Res Profile Picture Viewer built right in.
-
-- 🛡️ **Privacy Controls**
-  Includes an Enhanced Ghost Mode for viewing stories and DMs anonymously, plus an integrated Ad Blocker.
-
-- 🎥 **Video Player Controls & PIP**
-  Native video controls and Picture-in-Picture mode for Reels and videos.
-
-- 🔤 **Custom Bio Fonts**
-  Easily convert bio text to stylized unicode fonts with a built-in generator.
-
-- 💎 **Verified Badge**
-  Dynamically adds a custom verification badge exclusively to your profile.
-
----
-
-## 🚀 Installation
-
-Install this extension locally in Chrome in just a few clicks:
-
-1. Open Google Chrome and navigate to chrome://extensions.
-2. Enable **Developer mode** in the top right corner.
-3. Click on **Load unpacked** in the top left corner.
-4. Select the folder containing this repository.
-5. Pin the extension to your toolbar and click the **Iassist** icon to launch your new Instagram experience!
-
----
-
-## 📁 Directory Structure
-
-| Directory | Description |
-| --------- | ----------- |
-| pp/    | Core JavaScript, CSS, and Tailwind styling (	w.css, pp.js) powering the extension. |
-| img/    | SVG icons, logos, and UI badge assets. |
-| js/     | Background scripts and utility functions. |
-| ideo/  | Assets used for video rendering and playback. |
-| manifest.json | The Chrome Extension manifest file defining permissions. |
-
----
-
-## 🛠️ Under the Hood
-
-- Integrated a sleek, system-wide **iOS blue (#007AFF)** theme and glassmorphism styling.
-- Replaced all legacy assets with minimalist **macOS inspired icons**.
-- Injected custom features directly into the DOM (Zen Mode, PIP, HD Downloads).
-- Implemented robust logic to accurately apply the custom verification badge on the user's own profile page.
-- Fully bypassed legacy paywalls to open-source all premium logic.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
