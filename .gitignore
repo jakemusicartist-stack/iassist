@@ -3,3 +3,6 @@ _metadata/
 .DS_Store
 Thumbs.db
 *.tmp
+
+# Local dev scripts — not for public repo
+push_to_github.bat

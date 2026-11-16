@@ -1,90 +1,122 @@
 <div align="center">
 
-  <img src="icons/icon-128.png" alt="Instagrous Icon" width="120" height="120" style="border-radius: 24px;" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="icons/icon-128.png">
+    <source media="(prefers-color-scheme: light)" srcset="icons/icon-128.png">
+    <img src="icons/icon-128.png" alt="Instagrous Icon" width="128" height="128" />
+  </picture>
 
   # Instagrous
 
-  <p><strong>Instagram without the noise. Private, ad-free, local browsing.</strong></p>
+  <p><em>Instagram. But on your terms.</em></p>
 
   <p>
-    <img src="https://img.shields.io/badge/Manifest-V3-blue.svg" alt="Manifest V3" />
-    <img src="https://img.shields.io/badge/Privacy-100%25%20Local-success.svg" alt="100% Local" />
-    <img src="https://img.shields.io/badge/Chrome-116%2B-orange.svg" alt="Chrome 116+" />
-    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT" />
+    <img src="https://img.shields.io/badge/Manifest-V3-7B2FBE.svg?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Privacy-100%25%20Local-FF3CAC.svg?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Chrome-116%2B-orange.svg?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" />
   </p>
 
 </div>
 
 ---
 
-## ⚡ Overview
+## What Is Instagrous?
 
-**Instagrous** is a privacy-first Chrome extension designed to clean up your Instagram web experience. It filters sponsored content, blocks tracking scripts, and gives you a streamlined, distraction-free feed with zero external servers.
+**Instagrous** is a privacy-first Chrome extension that gives you full control over your Instagram experience. Ghost through Instagram without leaving a trace — hide your read receipts, stay invisible on stories, block ads, and download any content directly from your feed.
 
-- 🚫 **Ad & Sponsored Post Blocking**: Suppresses sponsored posts, suggestion carousels, and promotional injected content.
-- 🔒 **Zero Telemetry / 100% Local**: No external telemetry, no remote analytics, and no third-party tracking. All logic runs directly on your machine.
-- ⚡ **Lightweight & Fast**: Built on Chrome Manifest V3 using high-performance declarative rules and minimal resource overhead.
+No accounts. No servers. Everything runs 100% locally on your machine.
 
 ---
 
-## 🚀 How to Load in Google Chrome (Step-by-Step)
+## ✨ Features
 
-Follow these quick steps to load the unpacked extension into Chrome:
+### 👻 Ghost Mode — Stay Invisible
+- **Hide Seen on DMs** — Read messages freely without triggering the "Seen" receipt. Instagram will never know you opened the message.
+- **Ghost Stories** — View stories silently. Your name won't appear in the viewer list; you watch, they never know.
 
-### 1. Download or Clone the Repository
-Clone or download this repository onto your computer:
+### ⬇️ Download Anything
+- **One-click media download** — Download photos, videos, Reels, and Stories from any Instagram post directly to your device. No third-party sites, no quality loss.
+- Works on posts, profiles, Reels, and DM media.
+
+### 🚫 Ad & Sponsored Post Blocking
+- Strips out sponsored posts, suggested accounts, and promotional injections from your feed.
+- Powered by Chrome's native `declarativeNetRequest` — zero performance cost.
+
+### 🔒 Total Privacy
+- **Zero telemetry** — No data ever leaves your machine.
+- **No account required** — Install and go. No sign-in, no tracking.
+- **100% local logic** — Every feature runs in your browser.
+
+---
+
+## 🚀 Load in Chrome (Step-by-Step)
+
+### Step 1 — Get the Extension Files
+Clone or download this repository:
 ```bash
 git clone https://github.com/jakemusicartist-stack/iassist.git
 ```
-*(Or keep the extracted folder containing `manifest.json`)*
+Or download the ZIP from GitHub and extract it. The folder containing `manifest.json` is what you need.
 
-### 2. Open the Extensions Page in Chrome
-- Open Google Chrome.
-- In the address bar, type `chrome://extensions` and press **Enter**.
-- *(Alternative: Click Chrome Menu `⋮` -> **Extensions** -> **Manage Extensions**)*.
+### Step 2 — Open Chrome Extensions
+In the Chrome address bar, type:
+```
+chrome://extensions
+```
+Press **Enter**.
 
-### 3. Enable Developer Mode
-- In the top-right corner of the Extensions page, toggle the **Developer mode** switch to **ON**.
+### Step 3 — Enable Developer Mode
+In the **top-right corner** of the Extensions page, toggle the **Developer mode** switch to **ON**.
 
-### 4. Load the Unpacked Extension
-- Click the **"Load unpacked"** button in the top-left corner.
-- In the folder picker window, select this folder (the folder containing `manifest.json`).
-- Click **Select Folder**.
+### Step 4 — Load Unpacked
+Click **"Load unpacked"** in the top-left.  
+In the folder picker, navigate to and select the folder containing `manifest.json` (the root of this repo / extracted folder).  
+Click **Select Folder**.
 
-### 5. Done! 🎉
-- **Instagrous** will appear in your extension list.
-- Pin the extension icon to your Chrome toolbar for easy access.
-- Navigate to [instagram.com](https://www.instagram.com) to enjoy a clean, private browsing experience!
+### Step 5 — Done! 🎉
+**Instagrous** appears in your extensions list. Pin it to your toolbar and head to [instagram.com](https://www.instagram.com).
 
 ---
 
-## 📁 Repository Structure
+## ⚡ One-Click GitHub Sync
+
+A `push_to_github.bat` file is included. Double-click it to stage, commit, and force-push all changes to this repository in seconds.
+
+```
+dist/
+└── push_to_github.bat   ← double-click to deploy
+```
+
+---
+
+## 📁 File Structure
 
 ```text
-├── icons/              # Extension icons (16px, 32px, 48px, 128px)
-├── rules/              # Declarative net request filter rules
+├── icons/              # Extension icons (16, 32, 48, 128px) — bright on dark & light
+├── rules/              # Declarative ad-block filter rules (ads.json)
 ├── background.js       # Manifest V3 service worker
-├── content.js          # Injected UI & layout cleanup scripts
-├── content.css         # Styling rules for distraction-free layout
-├── ghost-main.js       # Stealth & script sanitization engine
-├── manifest.json       # Chrome extension manifest (V3)
-├── push_to_github.bat  # 1-click batch script to commit & push to GitHub
-└── README.md           # Documentation
+├── content.js          # Feed cleanup, download injector, ghost DM/story engine
+├── content.css         # Distraction-free layout styles
+├── ghost-main.js       # Stealth interception core
+├── manifest.json       # Chrome Extension Manifest V3
+├── push_to_github.bat  # 1-click commit & force-push script
+└── README.md           # You are here
 ```
 
 ---
 
 ## 🛡️ Permissions
 
-| Permission | Purpose |
+| Permission | Why It's Needed |
 | :--- | :--- |
-| `storage` | Saves your local display and filtering preferences |
-| `declarativeNetRequest` | High-efficiency local ad and tracking script blocking |
-| `downloads` | Allows saving media directly to your local downloads when requested |
-| `cookies` | Manages local session boundaries securely |
+| `storage` | Saves your ghost mode and download preferences locally |
+| `declarativeNetRequest` | Blocks ads and sponsored content natively in Chrome |
+| `downloads` | Triggers file downloads when you click the download button |
+| `cookies` | Maintains session boundaries without logging you out |
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+MIT © Instagrous Contributors
