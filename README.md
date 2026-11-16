@@ -73,17 +73,6 @@ Click **Select Folder**.
 
 ---
 
-## ⚡ One-Click GitHub Sync
-
-A `push_to_github.bat` file is included. Double-click it to stage, commit, and force-push all changes to this repository in seconds.
-
-```
-dist/
-└── push_to_github.bat   ← double-click to deploy
-```
-
----
-
 ## 📁 File Structure
 
 ```text
