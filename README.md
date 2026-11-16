@@ -1,11 +1,5 @@
 <div align="center">
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="icons/icon-128.png">
-    <source media="(prefers-color-scheme: light)" srcset="icons/icon-128.png">
-    <img src="icons/icon-128.png" alt="Instagrous Icon" width="128" height="128" />
-  </picture>
-
   # Instagrous
 
   <p><em>Instagram. But on your terms.</em></p>
